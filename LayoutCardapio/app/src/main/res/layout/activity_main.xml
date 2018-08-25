@@ -4,12 +4,221 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_margin="16dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n1"
+            android:background="#FE9E0D"
+            android:textSize="32dp"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Á moda do Freguês"
+            android:textSize="20dp"
+            android:textColor="#FE9E0D"
+            android:paddingLeft="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/numero"/>
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@id/titulo"
+            android:layout_toRightOf="@+id/numero"
+            android:paddingLeft="8dp"
+            android:text="Escolha no máximo 5 ingredientes"
+            android:textColor="#000000" />
+
+        <View
+            android:id="@+id/linha"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/numero"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/numero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n2"
+            android:background="#FE9E0D"
+            android:textSize="32dp"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:layout_below="@+id/linha"/>
+        />
+
+        <TextView
+            android:id="@+id/titulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 queijos"
+            android:textSize="20dp"
+            android:textColor="#FE9E0D"
+            android:paddingLeft="8dp"
+            android:layout_below="@id/linha"
+            android:layout_toRightOf="@+id/numero2"/>
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Molho, mussarela, parmesão, provolone e catupiry"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:layout_below="@id/titulo2"
+            android:layout_toRightOf="@+id/numero2"/>
+
+        <View
+            android:id="@+id/linha2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/texto2"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/numero3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n3"
+            android:background="#FE9E0D"
+            android:textSize="32dp"
+            android:textColor="#ffffff"
+            android:padding="8dp"
+            android:layout_below="@+id/linha2"/>
+        />
+
+        <TextView
+            android:id="@+id/titulo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 queijos"
+            android:textSize="20dp"
+            android:textColor="#FE9E0D"
+            android:paddingLeft="8dp"
+            android:layout_below="@id/linha2"
+            android:layout_toRightOf="@+id/numero3"/>
+
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Molho, mussarela, parmesão, provolone, catupiry e gorgonzola"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:layout_below="@id/titulo3"
+            android:layout_toRightOf="@+id/numero3"/>
+
+        <View
+            android:id="@+id/linha3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/numero3"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/numero4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/numero3"
+            android:background="#FE9E0D"
+            android:padding="8dp"
+            android:text="@string/n4"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texto3"
+            android:layout_toEndOf="@+id/numero"
+            android:paddingLeft="8dp"
+            android:text="Á moda do casa"
+            android:textColor="#FE9E0D"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignBottom="@+id/numero"
+            android:layout_alignEnd="@+id/titulo"
+            android:paddingLeft="8dp"
+            android:text="Todos os ingredientes"
+            android:textColor="#000000" />
+
+        <View
+            android:id="@+id/linha4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/numero5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/linha4"
+            android:background="#FE9E0D"
+            android:padding="8dp"
+            android:text="@string/n5"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/titulo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linha4"
+            android:layout_toEndOf="@+id/numero"
+            android:paddingLeft="8dp"
+            android:text="Á Presunto"
+            android:textColor="#FE9E0D"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/texto5"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignBottom="@+id/numero5"
+            android:layout_toEndOf="@+id/numero"
+            android:paddingLeft="8dp"
+            android:text="Todos os ingredientes"
+            android:textColor="#000000" />
+
+        <View
+            android:id="@+id/linha5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="113dp"
+            android:background="#000000" />
+
+    </RelativeLayout>
+
 </ScrollView>
